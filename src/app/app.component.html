@@ -32,6 +32,12 @@
               {{ingredients}}
             </div>
           </div>
+          <div class="category">
+              <h4>Kategorija: {{tempCocktail.category}}</h4>
+              <h5>Čaša: {{tempCocktail.glass}}</h5>
+              <small *ngIf="tempCocktail.alcoholic">Alkoholni koktel</small>
+              <small *ngIf="!tempCocktail.alcoholic"><img src="assets/img/non-alcoholic.png" alt=""></small>
+            </div>
           <div class="recipe">
             <p>{{tempCocktail.instructions}}</p>
           </div>

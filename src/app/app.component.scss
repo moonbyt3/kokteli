@@ -1,8 +1,13 @@
 $color-theme: #28b49b;
 $color-opposing: whitesmoke;
+$color-second: #e64b78;
 
 main {
     background-color: whitesmoke;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 .side-bar {
     display: none;
@@ -47,6 +52,15 @@ main {
         }
         div:hover {
             color: white;
+        }
+    }
+    .category {
+        margin: 2em 0;
+        h4 {
+            color: $color-theme;
+        }
+        h5 {
+            color: $color-second;
         }
     }
     .recipe {

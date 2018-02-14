@@ -1,5 +1,8 @@
 nav {
     margin-bottom: 1em;
+    row {
+        margin: 0;
+    }
 }
 img {
     width: 30%;
@@ -8,7 +11,8 @@ img {
 i {
     float: right;
     position: relative;
-    right: 1em;
+    margin-right: 1em;
+    right: 0;
     top: 40%;
     font-size: 20px;
     
