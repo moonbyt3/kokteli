@@ -11,15 +11,29 @@ main {
 }
 .side-bar {
     display: none;
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        li {
+    .side-menu {
+        color: white;
+        font-size: 90%;
+        font-weight: 600;
+        h5 {
             margin: 1em 0;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li {
+                margin: 1em 0;
+                &:hover {
+                    color: $color-second;
+                }
+            }
+            
         }
     }
+    
 }
 .content {
     form {
@@ -79,11 +93,11 @@ main {
 @media only screen and (min-width: 768px) {
     .side-bar {
         display: inline-block;
-        background-color: lightblue;
+        background-color: $color-theme;
     }
 }
 
-//desktop screen
+//desktop screeningred
 @media only screen and (min-width: 1024px) {
     
 }
