@@ -17,3 +17,15 @@ i {
     font-size: 20px;
     
 }
+//desktop screen
+@media only screen and (min-width: 1024px) {
+    .logo{
+        img {
+            max-width: 200px;
+        }
+        i {
+            margin-right: 24%;
+            font-size: 3em;
+        }
+    }
+}
