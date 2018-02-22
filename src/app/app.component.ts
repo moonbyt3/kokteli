@@ -206,7 +206,7 @@ const mockCoctailDatabase = {
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
       "instructions": "U sejker dodajte sastojke i mesajte dok se svi sastojci ne pomesaju. Zatim dodajte dosta leda i mesajte dok sejker ne postane hladan. Dekorisite sa kriskama limuna.",
-      "drinkThumb": "assets/img/name.jpg",
+      "drinkThumb": "assets/img/johnnie-walker-black-sour.jpg",
       "ingredients": [
         "Johnnie Black - 0.03ml",
         "Triple Sec Narandza - 0.015ml",
@@ -389,16 +389,24 @@ export class AppComponent {
   tempCocktail: any;
   baseVideoURL: string = 'https://www.youtube.com/embed/';
   fullVideoURL: SafeResourceUrl;
+
+  optionBar: any;
+
   constructor(private sanitizer: DomSanitizer) {
     this.coctails = mockCoctailDatabase;
     this.tempCocktail = this.coctails.drinks[0];
     this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video);
   }
   ngOnInit() {
-    
+    this.optionBar = document.getElementById('cocktail');
   }
   updateCocktail(e, sanitizer?: DomSanitizer) {
     this.tempCocktail = this.coctails.drinks[e.value];
-    this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video)
+    this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video);
+  }
+  sidebarUpdateCocktail(e){
+    this.tempCocktail = this.coctails.drinks[e];
+    this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video);
+    this.optionBar.selectedIndex = e;
   }
 }

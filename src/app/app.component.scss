@@ -11,6 +11,7 @@ main {
 }
 .side-bar {
     display: none;
+    margin-left: 1em;
     .side-menu {
         color: white;
         font-size: 90%;
@@ -28,6 +29,7 @@ main {
                 margin: 1em 0;
                 &:hover {
                     color: $color-second;
+                    cursor: pointer;
                 }
             }
             
