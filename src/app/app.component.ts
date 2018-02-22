@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 const mockCoctailDatabase = {
   "drinks": [
       {
           "idDrink": "0",
           "drink": "Martini",
-          "video": null,
+          "video": "1Jq4tPutdGQ",
           "category": "Klasični koktel",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
@@ -22,7 +23,7 @@ const mockCoctailDatabase = {
       {
           "idDrink": "1",
           "drink": "Long Island Iced Tea",
-          "video": null,
+          "video": "_CIxQcyWbTo",
           "category": "Klasični koktel",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
@@ -42,7 +43,7 @@ const mockCoctailDatabase = {
       {
           "idDrink": "2",
           "drink": "Cosmopolitan",
-          "video": null,
+          "video": "zIsttJCAPgI",
           "category": "Klasični koktel",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
@@ -59,7 +60,7 @@ const mockCoctailDatabase = {
       {
           "idDrink": "3",
           "drink": "Pina Colada",
-          "video": null,
+          "video": "YaQEaf92z00",
           "category": "Klasični koktel",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
@@ -76,7 +77,7 @@ const mockCoctailDatabase = {
       {
           "idDrink": "4",
           "drink": "Mojito",
-          "video": null,
+          "video": "NANdz-YKMUw",
           "category": "Klasični koktel",
           "alcoholic": true,
           "glass": "Ohlađena visoka čaša",
@@ -95,7 +96,7 @@ const mockCoctailDatabase = {
       {
         "idDrink": "5",
         "drink": "Monkey Brain",
-        "video": null,
+        "video": "26Va836YJoY",
         "category": "Šuter",
         "alcoholic": true,
         "glass": "Šuter 0.3ml",
@@ -113,7 +114,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "6",
       "drink": "Screwdriver (đus-vodka)",
-      "video": null,
+      "video": "ZCtpPMZsajg",
       "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Čaša 0.2dl",
@@ -131,8 +132,8 @@ const mockCoctailDatabase = {
     },
     {
       "idDrink": "7",
-      "drink": "Cuba libre",
-      "video": null,
+      "drink": "Cuba Libre",
+      "video": "BRUpluOmonk",
       "category": "",
       "alcoholic": true,
       "glass": "Pinta ili 0.3dl",
@@ -149,7 +150,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "8",
       "drink": "Tequila Sunrise",
-      "video": null,
+      "video": "NVeTGvwk8y0",
       "category": "Klasični kokteli",
       "alcoholic": true,
       "glass": "Čaša od 2dl",
@@ -165,7 +166,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "9",
       "drink": "Margarita",
-      "video": null,
+      "video": "q-gYcvipozY",
       "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Čaša 0.2dl",
@@ -200,7 +201,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "11",
       "drink": "Johnnie Black Sweet & Sour",
-      "video": null,
+      "video": "DHiZGCzSMbE",
       "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
@@ -218,7 +219,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "12",
       "drink": "Moscow Mule",
-      "video": null,
+      "video": "W1_eAahUUpM",
       "category": "Klasicni kokteli",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
@@ -237,7 +238,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "13",
       "drink": "Hard Lemonade",
-      "video": null,
+      "video": "9mwoSjuD-5Y",
       "category": "Klasicni kokteli",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
@@ -272,7 +273,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "15",
       "drink": "Metropolitian",
-      "video": null,
+      "video": "S45bqty03DQ",
       "category": "Klasicni kokteli",
       "alcoholic": true,
       "glass": "Ohlađena čaša za martini",
@@ -281,7 +282,7 @@ const mockCoctailDatabase = {
       "ingredients": [
         "Vodka - 0.03ml",
         "Triple sec - 0.03ml",
-        "Sok od borovnice - 0.045ml",
+        "Sok od brusnice - 0.045ml",
         "Sok od limete - 0.02ml"
       ],
       "dateModified": "2018-02-12 16:21:31"
@@ -289,7 +290,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "16",
       "drink": "Caipirosca",
-      "video": null,
+      "video": "wZGTVXeSaAU",
       "category": "",
       "alcoholic": true,
       "glass": "0.2dl",
@@ -306,7 +307,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "17",
       "drink": "Fruity Carpirosca",
-      "video": null,
+      "video": "37dL-L52kRc",
       "category": "",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
@@ -324,7 +325,7 @@ const mockCoctailDatabase = {
     {
       "idDrink": "18",
       "drink": "Pear Elder Flower Martini",
-      "video": null,
+      "video": "pGWDRDxWz-o",
       "category": "Klasicni kokteli",
       "alcoholic": true,
       "glass": "Ohlađena čaša za martini",
@@ -386,18 +387,18 @@ export class AppComponent {
   //        >1>"Drink"
   coctails: any;
   tempCocktail: any;
-  constructor() {
+  baseVideoURL: string = 'https://www.youtube.com/embed/';
+  fullVideoURL: SafeResourceUrl;
+  constructor(private sanitizer: DomSanitizer) {
     this.coctails = mockCoctailDatabase;
     this.tempCocktail = this.coctails.drinks[0];
+    this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video);
   }
   ngOnInit() {
     
   }
-  updateCocktail(e) {
+  updateCocktail(e, sanitizer?: DomSanitizer) {
     this.tempCocktail = this.coctails.drinks[e.value];
-  }
-  search(searchKey) {
-    let x = this.coctails.drinks;
-    console.log(x);
+    this.fullVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseVideoURL + this.tempCocktail.video)
   }
 }

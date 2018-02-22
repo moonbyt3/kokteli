@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navigation></app-navigation>
 
-<main class="container-fluid">
+<main>
   <div class="row">
       <div class="side-bar col-md-4 col-lg-2">
         <div class="side-menu">
@@ -11,7 +11,7 @@
           </ul>
         </div>
       </div>
-      <div class="content col-sm-12 col-md-7 mx-auto text-center">
+      <div class="content col-sm-12 col-md-7 col-lg-6 mx-auto text-center">
         <form #cocktailForm="ngForm">
           <div class="select-item">
             <select #opcija id="cocktail"
@@ -44,6 +44,11 @@
           </div>
           <div class="coctail-image">
             <img src="{{tempCocktail.drinkThumb}}" alt="" class="thumb-img">
+          </div>
+          <br>
+          <div class="video">
+            <p *ngIf="!tempCocktail.video">Trenutno nemamo video za ovaj koktel</p>
+            <iframe width="100%" height="315" [src]="fullVideoURL" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
