@@ -7,9 +7,9 @@ const mockCoctailDatabase = {
           "idDrink": "0",
           "drink": "Martini",
           "video": "1Jq4tPutdGQ",
-          "category": "Klasični koktel",
+          "category": "Klasični kokteli",
           "alcoholic": true,
-          "glass": "Ohlađena čaša za koktel",
+          "glass": "Ohlađena čaša za martini",
           "instructions": "Istrljajte ivicu čaše sa limunovom kriškom i na ovlaženi deo dodajte so. Ohladite šejker, čašu, džin i vermut. Dodajte zatim u šejker dosta leda, džin i vermut i izmiksajte. Dodajte masline. Koktel  ima veliki broj varijacija i načina pripreme, a razlika je u odnosu dva osnovna sastojka koktela, vermuta i džina.",
           "drinkThumb": "assets/img/martini.jpg",
           "ingredients": [
@@ -24,7 +24,7 @@ const mockCoctailDatabase = {
           "idDrink": "1",
           "drink": "Long Island Iced Tea",
           "video": "_CIxQcyWbTo",
-          "category": "Klasični koktel",
+          "category": "Klasični kokteli",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
           "instructions": "Za pripremu ovog koktela, potrebno je sve sastojke sipati u šejker i dobro promućkati. Potom sve procijediti u velike čaše s ledom i na kraju dopuniti s Coca-Colom.",
@@ -44,7 +44,7 @@ const mockCoctailDatabase = {
           "idDrink": "2",
           "drink": "Cosmopolitan",
           "video": "zIsttJCAPgI",
-          "category": "Klasični koktel",
+          "category": "Klasični kokteli",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
           "instructions": "Osnovni sastojak ovog koktela je vodka, pa bi bilo poželjno da bude što boljeg kvaliteta. Sve sastojke dobro promešajte i poslužite bez leda u velikim martini čašama. Čašu možete ukrasiti limunom ili limetom.",
@@ -61,7 +61,7 @@ const mockCoctailDatabase = {
           "idDrink": "3",
           "drink": "Pina Colada",
           "video": "YaQEaf92z00",
-          "category": "Klasični koktel",
+          "category": "Klasični kokteli",
           "alcoholic": true,
           "glass": "Ohlađena čaša za koktel",
           "instructions": "Za pripremu je potrebno sve sastojke staviti u električni mikser i miksati s drobljenim ledom na najvećoj brzini, potom iscediti u čaše i servirati sa slamkom. Za dekoraciju se mogu koristiti kriške ananasa ili Maraskino trešnje.",
@@ -78,7 +78,7 @@ const mockCoctailDatabase = {
           "idDrink": "4",
           "drink": "Mojito",
           "video": "NANdz-YKMUw",
-          "category": "Klasični koktel",
+          "category": "Klasični kokteli",
           "alcoholic": true,
           "glass": "Ohlađena visoka čaša",
           "instructions": "Stavite listove nane u ohlađenu visoku čašu. Dodajte 2 kašičice smeđeg šećera i sipajte 10 ml soka od limete. Popunite sa kockama leda i sipajte 40 ml ruma. Prelijte mineralnom vodom i dobro promešajte. Dekorišite sa kriškom limete i poslužite sa jednom ili dve debele slamke po želji",
@@ -99,13 +99,13 @@ const mockCoctailDatabase = {
         "video": "26Va836YJoY",
         "category": "Šuter",
         "alcoholic": true,
-        "glass": "Šuter 0.3ml",
+        "glass": "Šuter 0.03dl",
         "instructions": "Sipajte prvo vodku i limunov/limetin sok. Ukapajte nekoliko kapi Grenadine-a i zatim prelijte Baileys-om koji će zbog limuna dobiti teksturu mozga.",
         "drinkThumb": "assets/img/monkey-brain.jpg",
         "ingredients": [
-          "Vodka - 0.1ml",
-          "Limunov/limetin sok - 0.1ml",
-          "Baileys® irish cream - 0.1ml",
+          "Vodka - 10ml",
+          "Limunov/limetin sok - 10ml",
+          "Baileys® irish cream - 10ml",
           "Grenadine - nekoliko kapi"
           
         ],
@@ -115,7 +115,7 @@ const mockCoctailDatabase = {
       "idDrink": "6",
       "drink": "Screwdriver (đus-vodka)",
       "video": "ZCtpPMZsajg",
-      "category": "Klasični koktel",
+      "category": "Klasični kokteli",
       "alcoholic": true,
       "glass": "Čaša 0.2dl",
       "instructions": "Veoma jednostavan koktel. Sipajte preko malo leda trećinu mere vodke i dolijte sok od narandže. Možete ukrasiti voćem",
@@ -134,7 +134,7 @@ const mockCoctailDatabase = {
       "idDrink": "7",
       "drink": "Cuba Libre",
       "video": "BRUpluOmonk",
-      "category": "",
+      "category": "Klasični kokteli",
       "alcoholic": true,
       "glass": "Pinta ili 0.3dl",
       "instructions": "Još jedan veoma lagan koktel. Stavite sve sastojke u čašu sa ledom, promešajte i ukrasite sa kriškama limete.",
@@ -142,7 +142,7 @@ const mockCoctailDatabase = {
       "ingredients": [
         "Tamni / svetli rum - 1/3",
         "Coca-Cola - 2/3",
-        "Sok limuna/limete - 0.1ml",
+        "Sok limuna/limete - 10ml",
         "Slamčica"
       ],
       "dateModified": "2018-02-12 02:58:31"
@@ -157,9 +157,9 @@ const mockCoctailDatabase = {
       "instructions": "Ovaj se koktel priprema direktno u čaši od 2 dl i to na način da prvo stavite kocke leda, a zatim dodate sok od narandže.  Nakon toga dodajte 0.4 dl tekile i Grenadine sirupa. Možete dekorisati kolutom narandže i Maraskino trešnjom Koktel se promeša barskom kašičicom i spreman je za konzumiranje.",
       "drinkThumb": "assets/img/tequila-sunrise.jpg",
       "ingredients": [
-        "Sok od narandže - 1.5dl",
-        "Tekila - 0.4dl",
-        "Grenadine sirup - 0.1dl"
+        "Sok od narandže - 150ml",
+        "Tekila - 40ml",
+        "Grenadine sirup - 10ml"
       ],
       "dateModified": "2018-02-12 03:12:31"
     },
@@ -193,8 +193,8 @@ const mockCoctailDatabase = {
       "drinkThumb": "assets/img/sex-maschine-cocktail.jpg",
       "ingredients": [
         "Kahlua liker kafa - 1/3",
-        "Baileys® irish cream - 0.1ml",
-        "Mleko 0.1ml"
+        "Baileys® irish cream - 1/3",
+        "Mleko 1/3"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
@@ -205,14 +205,13 @@ const mockCoctailDatabase = {
       "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
-      "instructions": "U sejker dodajte sastojke i mesajte dok se svi sastojci ne pomesaju. Zatim dodajte dosta leda i mesajte dok sejker ne postane hladan. Dekorisite sa kriskama limuna.",
+      "instructions": "U šejker dodajte sastojke i mešajte dok se svi sastojci ne sjedine. Dodajte dosta leda i mešajte dok šejker ne postane hladan. Dekorišite sa kriškama limuna. Dekorišite limunom ili limetom",
       "drinkThumb": "assets/img/johnnie-walker-black-sour.jpg",
       "ingredients": [
-        "Johnnie Black - 0.03ml",
-        "Triple Sec Narandza - 0.015ml",
-        "Sok od limuna - 0.02ml",
-        "Belance - 1 jaje",
-        "Sirup od šećera - 0.015ml"
+        "Johnnie Black - 50ml",
+        "Sok od limuna - 15ml",
+        "Sirup od šećera - 15ml",
+        "Led"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
@@ -220,16 +219,16 @@ const mockCoctailDatabase = {
       "idDrink": "12",
       "drink": "Moscow Mule",
       "video": "W1_eAahUUpM",
-      "category": "Klasicni kokteli",
+      "category": "Klasični kokteli",
       "alcoholic": true,
-      "glass": "Ohlađena čaša za koktel",
-      "instructions": "Sipajte vodku u casu, dodati svezu limetu iseckanu. Dodajte sirup od secera. Sve to dobro iznjecite zatim dodajte sirup od djumbira i napuniti casu punu leda i dodati sprajt do vrha case. Dekorisati sa limetom i nekoliko listova nane",
-      "drinkThumb": "assets/img/name.jpg",
+      "glass": "0.3dl",
+      "instructions": "Sipajte vodku u čašu i dodajte svežu limetu iseckanu. Dodajte sirup od šećera. Sve to dobro iznječite zatim dodajte sirup od đumbira i napunite čašu punu leda i dodati sprajt do vrha caše. Dekorisati sa limetom i nekoliko listova nane",
+      "drinkThumb": "assets/img/moscow-mule.jpg",
       "ingredients": [
-        "Vodka - 0.06ml",
+        "Vodka - 60ml",
         "Limeta - 1/2",
-        "Sirup od šećera - 0.015ml",
-        "Sirup od đumbira - 0.015ml",
+        "Sirup od šećera - 15ml",
+        "Sirup od đumbira - 15ml",
         "Sprajt",
         "Nana - nekoliko listova"
       ],
@@ -239,86 +238,86 @@ const mockCoctailDatabase = {
       "idDrink": "13",
       "drink": "Hard Lemonade",
       "video": "9mwoSjuD-5Y",
-      "category": "Klasicni kokteli",
+      "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Ohlađena čaša za koktel",
-      "instructions": "Sipajte sve sastojke u sejker i dodajte led. Mesajte dok sejker ne postane hladan. Koktel je spreman za serviranje, dekorisite ga sa limunom ili limetom.",
-      "drinkThumb": "assets/img/name.jpg",
+      "instructions": "Sipajte sve sastojke u šejker i dodajte led. Mešajte dok šejker ne postane hladan. Koktel je spreman za serviranje, dekorišite ga sa limunom ili limetom.",
+      "drinkThumb": "assets/img/hard-lemonade.jpg",
       "ingredients": [
-        "Vodka - 0.06ml",
-        "Limunov sok - 0.01ml",
-        "Sirup od secera - 0.03ml",
+        "Vodka - 60ml",
+        "Limunov sok - 10ml",
+        "Sirup od šećera - 30ml",
         "Mineralna voda"
       ],
-      "dateModified": "2018-02-12 16:21:31"
+      "dateModified": "2018-02-23 01:11:21"
     },
     {
       "idDrink": "14",
       "drink": "Rose Cosmo",
       "video": null,
-      "category": "Klasicni kokteli",
+      "category": "Klasični koktel",
       "alcoholic": true,
       "glass": "Ohlađena čaša za martini",
       "instructions": "",
-      "drinkThumb": "assets/img/name.jpg",
+      "drinkThumb": "assets/img/rose-cosmo.jpg",
       "ingredients": [
-        "Vodka Smirnoff - 0.03ml",
-        "Limunov sok - 0.01ml",
-        "Triple sec - 0.02ml",
-        "Sirup od ruze - 0.02ml",
-        "Sok od borovnice"
+        "Vodka Smirnoff - 30ml",
+        "Limunov sok - 10ml",
+        "Triple sec - 20ml",
+        "Sirup od ruže - 20ml",
+        "Sok od brusnice"
       ],
-      "dateModified": "2018-02-12 16:21:31"
+      "dateModified": "2018-02-21 13:41:31"
     },
     {
       "idDrink": "15",
-      "drink": "Metropolitian",
-      "video": "S45bqty03DQ",
+      "drink": "Jameson Ginger and Lime",
+      "video": "3hX3nstpbA4",
       "category": "Klasicni kokteli",
       "alcoholic": true,
-      "glass": "Ohlađena čaša za martini",
-      "instructions": "",
-      "drinkThumb": "assets/img/name.jpg",
+      "glass": "3dl",
+      "instructions": "Napunite čašu ledom do vrha i Sipajte deo Jamesona. dodajte 4 dela Ginger Ale-a i promešajte. Krišku limete malo iscedite i stavite u led.",
+      "drinkThumb": "assets/img/jameson-ginger-and-lime.jpg",
       "ingredients": [
-        "Vodka - 0.03ml",
-        "Triple sec - 0.03ml",
-        "Sok od brusnice - 0.045ml",
-        "Sok od limete - 0.02ml"
+        "Jameson Irish Whiskey - 50ml",
+        "Schwepps Ginger Ale - 200ml",
+        "Limeta"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
     {
       "idDrink": "16",
-      "drink": "Caipirosca",
+      "drink": "Caipiroska",
       "video": "wZGTVXeSaAU",
       "category": "",
       "alcoholic": true,
-      "glass": "0.2dl",
-      "instructions": "",
-      "drinkThumb": "assets/img/name.jpg",
+      "glass": "2dl",
+      "instructions": "Isecite polovinu limete na sitnije komade, stavite ih u čašu i iscedite sa tučkom. Uzmite nekoliko listova bosiljka, stavite ih na dlan i pljesnite dva puta. Bosiljak stavite u čašu i blago ga presujte tučkom da otpusti aromu. Dodajte Vermut, Vodku, drobljeni led i promešajte. Dekorišite sa nekoliko listova bosiljka i limetom",
+      "drinkThumb": "assets/img/caipiroska.jpg",
       "ingredients": [
-        "Vodka - 0.06ml",
-        "Limeta - 1/2",
-        "Smedji secer - 2 kasicice",
-        "Led"
+        "Vermut - 60ml",
+        "Vodka - 20ml",
+        "Limeta - 1",
+        "Bosiljak",
+        "Led - drobljeni"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
     {
       "idDrink": "17",
-      "drink": "Fruity Carpirosca",
+      "drink": "Fruity Carpiroska",
       "video": "37dL-L52kRc",
       "category": "",
       "alcoholic": true,
-      "glass": "Ohlađena čaša za koktel",
-      "instructions": "",
-      "drinkThumb": "assets/img/name.jpg",
+      "glass": "3dl",
+      "instructions": "Iseckajte limetu na sitne komade i dodajte smeđi šećer. Sa tučkom ispresujte da limeta otpusti sok. Zatim dodajte seckano voće i ponovo ispresujte. Dodajte drobljeni led i votku i promesajte. Dekorišite sa limetom i voćem.",
+      "drinkThumb": "assets/img/fruity-capiroska.jpg",
       "ingredients": [
-        "Vodka - 0.06ml",
-        "Smedji secer - 2 kasicice",
+        "Vodka - 50ml",
+        "Smeđi šećer - 2 kasičice",
         "Limeta - 1/2",
-        "Sveze voce - sitno iseckano",
-        "Led - mleveni"
+        "Sveže voće - sitno iseckano",
+        "Led - drobljeni"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
@@ -330,12 +329,12 @@ const mockCoctailDatabase = {
       "alcoholic": true,
       "glass": "Ohlađena čaša za martini",
       "instructions": "",
-      "drinkThumb": "assets/img/name.jpg",
+      "drinkThumb": "assets/img/pear-elder-flower-martini.jpg",
       "ingredients": [
-        "Vodka - 0.05ml",
-        "Sok od kruske - 0.065ml",
-        "Sok od limuna - 0.015ml",
-        "Sirup od zove - 0.015ml"
+        "Vodka - 50ml",
+        "Sok od kruske - 65ml",
+        "Sok od limuna - 15ml",
+        "Sirup od zove - 15ml"
       ],
       "dateModified": "2018-02-12 16:21:31"
     },
@@ -349,9 +348,9 @@ const mockCoctailDatabase = {
       "instructions": "",
       "drinkThumb": "assets/img/name.jpg",
       "ingredients": [
-        "Vodka - 0.06ml",
-        "Sok od limuna - 0.015ml",
-        "Sirup od secera - 0.015ml",
+        "Vodka - 60ml",
+        "Sok od limuna - 15ml",
+        "Sirup od secera - 15ml",
         "Mineralna voda",
         "Nana",
         "Limeta"
