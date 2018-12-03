@@ -1,0 +1,52 @@
+<main>
+  <div class="row">
+      <div class="side-bar col-sm-3 col-md-3 col-lg-2">
+        <div class="side-menu">
+          <h5>Lista koktela u bazi:</h5>
+          <ul>
+            <li *ngFor="let coctail of coctails.drinks" (click)="sidebarUpdateCocktail(coctail.idDrink)"> {{coctail.drink}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content col-sm-12 col-md-7 col-lg-6 mx-auto text-center">
+        <form #cocktailForm="ngForm">
+          <div class="select-item">
+            <select #opcija id="cocktail"
+                      class="form-control"
+                        name="select-coctail"
+                          (change)="updateCocktail(opcija)">
+              <option *ngFor="let cocktail of coctails.drinks" 
+                      [value]="cocktail.idDrink">
+                      {{cocktail.drink}}
+              </option>
+            </select>
+          </div>
+        </form>
+
+        <div class="cocktail">
+          <div class="ingredients">
+            <div *ngFor="let ingredients of tempCocktail.ingredients">
+              {{ingredients}}
+            </div>
+          </div>
+          <div class="category">
+              <h4>Kategorija: {{tempCocktail.category}}</h4>
+              <h5>Čaša: {{tempCocktail.glass}}</h5>
+              <small *ngIf="tempCocktail.alcoholic">Alkoholni koktel</small>
+              <small *ngIf="!tempCocktail.alcoholic"><img src="assets/img/non-alcoholic.png" alt=""></small>
+            </div>
+          <div class="recipe">
+            <p>{{tempCocktail.instructions}}</p>
+          </div>
+          <div class="coctail-image">
+            <img src="{{tempCocktail.drinkThumb}}" alt="Slika {{tempCocktail.drink}} koktela" class="thumb-img">
+          </div>
+          <br>
+          <div class="video">
+            <p *ngIf="!tempCocktail.video">trenutno nemamo video za ovaj koktel</p>
+            <iframe width="100%" height="315" [src]="fullVideoURL" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  </div>
+</main>

@@ -1,0 +1,114 @@
+$color-theme: #28b49b;
+$color-opposing: whitesmoke;
+$color-second: #e64b78;
+
+main {
+    background-color: whitesmoke;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.side-bar {
+    display: none;
+    margin-left: 1em;
+    .side-menu {
+        color: white;
+        font-size: 90%;
+        font-weight: 600;
+        h5 {
+            margin: 1em 0;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li {
+                margin: 1em 0;
+                &:hover {
+                    color: $color-second;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+    
+}
+.content {
+    .cocktail {
+        margin-bottom: 30px;
+    }
+    form {
+        margin: 2em 0;
+        .select-item {
+            select {
+                //for Chrome, not supported much :/
+                text-align-last: center;
+                padding: 0;
+            }
+        }
+    }
+    .ingredients {
+        
+        color: $color-opposing;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-top: 2em;
+        div {
+            background-color: $color-theme;
+            display: grid; /* added */
+            align-items: center; /* added */
+            min-height: 70px;
+            border: 2px solid $color-opposing;
+            font-size: 90%;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        div:hover {
+            color: white;
+            cursor: default;
+        }
+    }
+    .category {
+        margin: 2em 0;
+        h4 {
+            color: $color-theme;
+        }
+        h5 {
+            color: $color-second;
+        }
+    }
+    .recipe {
+        margin: 2em 1em;
+        text-align: justify;
+    }
+    .coctail-image {
+        img {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    }
+    .video {
+        color: $color-second;
+        text-transform: uppercase;
+        font-size: 120%;
+    }
+}
+
+//tablet screen  
+@media only screen and (min-width: 768px) {
+    .side-bar {
+        display: inline-block;
+        background-color: $color-theme;
+    }
+}
+
+//desktop screeningred
+@media only screen and (min-width: 1024px) {
+    
+}

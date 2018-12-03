@@ -1,0 +1,13 @@
+.category-wrap {
+    min-height: 65vh;
+    text-align: center;align-items: center;
+}
+.category-link {
+    font-size: 4rem;
+    transition: .3s ease;
+    color: #28b49b;
+    &:hover {
+        text-decoration: none;
+        color: #fa6487;
+    }
+}
