@@ -1,5 +1,5 @@
 # kokteli
-Recepti za koktele
+Angular aplikacija "Recepti za koktele"
 
-Live demo:
+Demo:
 https://moonbyt3.github.io/kokteli/
